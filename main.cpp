@@ -32,20 +32,27 @@ void print_map(std::vector<std::vector<patch>>& map)
     int size = static_cast<int>(map[0].size());
 
     std::cout << "  ";
-    for(int i = -1; i < size; ++i)
+    for(int i = -2; i < size; ++i)
     {
         for(int j = -1; j < size; ++j)
         {
-            if(i == -1)
+            if(i == -2)
             {
                 if(j!=-1)
                     std::cout << j << ' ';
+            }
+            else if (i == -1)
+            {
+                if(j!=-1)
+                    std::cout << '-' << ' ';
+                else
+                    std::cout << "  ";
             }
             else
             {
                 if(j == -1)
                 {
-                    std::cout << i << ' ';
+                    std::cout << i << '|';
                 }
                 else
                 std::cout << map[i][j].get_num_individuals() << ' ';
