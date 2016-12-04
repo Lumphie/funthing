@@ -10,6 +10,15 @@ before_install:
   - sudo apt-get update -qq
   - sudo pip install codecov
   - chmod +x install_oclint.sh
+  - chmod +x build_funthing.sh
+  - chmod +x build_test.sh
+  - chmod +x travis_qmake_gcc_cpp11_boost_test_gcov_oclint_test
+  - chmod +x get_code_cov.sh
+  - chmod +x codecov
+  - chmod +x build.sh
+  - chmod +x do_oclint.sh
+
+
   - ./install_oclint.sh
 
 install: 
