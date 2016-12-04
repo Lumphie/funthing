@@ -13,7 +13,6 @@ before_install:
   - chmod +x build_funthing.sh
   - chmod +x build_test.sh
   - chmod +x get_code_cov.sh
-  - chmod +x codecov
   - chmod +x build.sh
   - chmod +x do_oclint.sh
 
