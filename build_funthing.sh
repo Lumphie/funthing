@@ -1,3 +1,3 @@
 #!/bin/bash
-qmake funthing.pro
+qmake FunThing.pro
 make
