@@ -20,7 +20,7 @@ install:
 script:
   - ./download_other_githubs.sh
   #- qmake funthing_test.pro; make debug; ./kewe_test; fi
-  - qmake funthing.pro; make debug; fi
+  - qmake funthing.pro; make debug;
   # - kpsewhich tkz-graph.sty
   # - ./build_pdf.sh
 
